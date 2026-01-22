@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Costruzioni Di Taranto srl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Costruzioni di Taranto srl - oltre 30 anni di esperienza in opere pubbliche: bitumatura, parchi, ponti, sgombero neve e ristrutturazioni.">
+  <style>
+    :root {
+      --primary: #a0001d;
+      --primary-dark: #6f0015;
+      --bg: #f4f4f7;
+      --text: #111827;
+      --muted: #6b7280;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    h2 {
+      font-size: 1.7rem;
+      margin-bottom: 16px;
+      color: var(--primary-dark);
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    .muted-title {
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 16px;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo-wrap img {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.8rem;
+    }
+
+    .logo-text span:first-child {
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--primary-dark);
+      font-size: 0.85rem;
+    }
+
+    .logo-text span:last-child {
+      color: var(--muted);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-weight: 600;
+    }
+
+    nav a {
+      position: relative;
+      padding-bottom: 4px;
+      color: #374151;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 0;
+      background: var(--primary);
+      transition: width 0.2s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      width: 22px;
+      height: 2px;
+      border-radius: 999px;
+      background: #111827;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        position: absolute;
+        top: 60px;
+        right: 16px;
+        background: #ffffff;
+        padding: 10px 14px;
+        border-radius: 10px;
+        box-shadow: 0 12px 30px rgba(15,23,42,0.2);
+        flex-direction: column;
+        display: none;
+      }
+
+      nav ul.open {
+        display: flex;
+      }
+
+      .nav-toggle {
+        display: flex;
+      }
+    }
+
+    /* HERO */
+
+    .hero {
+      background: radial-gradient(circle at top left, #1f2937, #020617);
+      color: #e5e7eb;
+      padding: 80px 0 72px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: rgba(17,24,39,0.8);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 12px;
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #f97373;
+    }
+
+    .hero-title {
+      font-size: 2.3rem;
+      margin-bottom: 14px;
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+      color: #d1d5db;
+      max-width: 520px;
+      margin-bottom: 16px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 18px;
+      font-size: 0.7rem;
+    }
+
+    .hero-tag {
+      border-radius: 999px;
+      border: 1px solid rgba(156,163,175,0.6);
+      padding: 4px 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 0.8rem;
+    }
+
+    .btn {
+      border-radius: 999px;
+      padding: 9px 18px;
+      border: none;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-size: 0.75rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: #b91c1c;
+      color: #ffffff;
+      box-shadow: 0 14px 35px rgba(0,0,0,0.5);
+    }
+
+    .btn-primary:hover {
+      background: #7f1d1d;
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+    }
+
+    .btn-outline {
+      border: 1px solid #6b7280;
+      color: #e5e7eb;
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      background: rgba(55,65,81,0.7);
+    }
+
+    .hero-secondary {
+      margin-top: 10px;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #9ca3af;
+    }
+
+    .hero-frame {
+      position: relative;
+    }
+
+    .hero-glow {
+      position: absolute;
+      inset: -18px;
+      border-radius: 24px;
+      background: radial-gradient(circle at 10% 0, rgba(248,113,113,0.22), transparent 60%),
+                  radial-gradient(circle at 90% 100%, rgba(59,130,246,0.18), transparent 55%);
+      filter: blur(12px);
+      opacity: 0.7;
+      z-index: -1;
+    }
+
+    .hero-window {
+      border-radius: 24px;
+      overflow: hidden;
+      border: 1px solid rgba(55,65,81,0.8);
+      background: #020617;
+      box-shadow: 0 24px 60px rgba(0,0,0,0.8);
+    }
+
+    .hero-window-header {
+      height: 40px;
+      border-bottom: 1px solid #111827;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 14px;
+      font-size: 0.7rem;
+      background: #020617;
+      color: #9ca3af;
+    }
+
+    .hero-dots {
+      display: inline-flex;
+      gap: 4px;
+    }
+
+    .hero-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+    }
+
+    .hero-dot.red { background: #f97373; }
+    .hero-dot.yellow { background: #facc15; }
+    .hero-dot.green { background: #34d399; }
+
+    .hero-image {
+      aspect-ratio: 16 / 9;
+      background-image: url("images/Strada_SP13.PNG");
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* AZIENDA */
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 40px;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .key-points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+      font-size: 0.85rem;
+      color: #374151;
+    }
+
+    @media (max-width: 700px) {
+      .key-points {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .key-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .key-bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--primary);
+      margin-top: 6px;
+    }
+
+    .image-frame {
+      position: relative;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 20px 40px rgba(15,23,42,0.28);
+      background: #020617;
+    }
+
+    .image-frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 0% 0%, rgba(239,68,68,0.2), transparent 60%);
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .image-frame-inner {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background-image: url("images/Sede_operativa.PNG");
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* SERVIZI */
+
+    .services-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    @media (max-width: 900px) {
+      .services-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    @media (max-width: 700px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .service-card {
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: #f9fafb;
+      padding: 12px 14px;
+      text-align: left;
+      cursor: pointer;
+      transition: box-shadow 0.15s ease, border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+      font-size: 0.9rem;
+    }
+
+    .service-card span.tag {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .service-card strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .service-card p {
+      font-size: 0.8rem;
+      color: #4b5563;
+      margin-bottom: 0;
+    }
+
+    .service-card.active {
+      border-color: var(--primary);
+      background: #fef2f2;
+      box-shadow: 0 18px 32px rgba(248,113,113,0.25);
+      transform: translateY(-1px);
+    }
+
+    .service-detail {
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: #f9fafb;
+      padding: 16px 18px;
+      font-size: 0.9rem;
+      box-shadow: 0 10px 25px rgba(15,23,42,0.15);
+    }
+
+    .service-detail h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      color: var(--primary-dark);
+    }
+
+    .service-detail ul {
+      margin-top: 8px;
+      padding-left: 18px;
+      font-size: 0.8rem;
+      color: #4b5563;
+    }
+
+    /* REALIZZAZIONI */
+
+    .filter-bar {
+      margin-bottom: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 0.7rem;
+    }
+
+    .filter-btn {
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      padding: 5px 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-weight: 600;
+      background: #ffffff;
+      color: #374151;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .filter-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #ffffff;
+      box-shadow: 0 14px 30px rgba(248,113,113,0.4);
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    @media (max-width: 900px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .project-card {
+      overflow: hidden;
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: #ffffff;
+      box-shadow: 0 10px 25px rgba(15,23,42,0.12);
+      font-size: 0.8rem;
+    }
+
+    .project-image {
+      aspect-ratio: 16 / 9;
+      background-size: cover;
+      background-position: center;
+      transition: transform 0.25s ease;
+    }
+
+    .project-card:hover .project-image {
+      transform: scale(1.04);
+    }
+
+    .project-info {
+      padding: 8px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      color: #111827;
+      margin-bottom: 2px;
+    }
+
+    .project-category {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+    }
+
+    .project-badge {
+      border-radius: 999px;
+      background: #f3f4f6;
+      padding: 3px 8px;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: #4b5563;
+      white-space: nowrap;
+    }
+
+    /* CONTATTI */
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+      gap: 18px;
+    }
+
+    @media (max-width: 900px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-card,
+    .contact-form {
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      background: #f9fafb;
+      padding: 18px 18px;
+      font-size: 0.88rem;
+      box-shadow: 0 10px 25px rgba(15,23,42,0.12);
+    }
+
+    .contact-list {
+      list-style: none;
+    }
+
+    .contact-list li {
+      margin-bottom: 12px;
+    }
+
+    .contact-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      margin-bottom: 2px;
+      display: block;
+    }
+
+    .contact-main {
+      color: #111827;
+    }
+
+    .contact-note {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 8px;
+    }
+
+    .contact-form label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #d1d5db;
+      padding: 8px 10px;
+      font: inherit;
+      font-size: 0.85rem;
+      background: #ffffff;
+    }
+
+    .contact-form textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .contact-form-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .contact-form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .contact-form button {
+      margin-top: 6px;
+      width: 100%;
+    }
+
+    .contact-privacy {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: #f9fafb;
+      padding: 16px 0;
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    footer span.brand {
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #4b5563;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="header-left" onclick="scrollToSection('home')">
+      <div class="logo-wrap">
+        <img src="images/Logo.png" alt="Costruzioni di Taranto srl - logo">
+      </div>
+      <div class="logo-text">
+        <span>COSTRUZIONI DI TARANTO srl</span>
+        <span>Opere stradali · parchi · ristrutturazioni</span>
+      </div>
+    </div>
+
+    <nav>
+      <div class="nav-toggle" id="navToggle">
+        <span></span><span></span><span></span>
+      </div>
+      <ul id="navList">
+        <li><a href="#azienda">Azienda</a></li>
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#realizzazioni">Realizzazioni</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="pill">
+          <span class="pill-dot"></span>
+          <span>Impresa di costruzioni stradali</span>
+        </div>
+        <h1 class="hero-title">Strade, parchi e infrastrutture a regola d’arte.</h1>
+        <p class="hero-subtitle">
+          Costruzioni di Taranto srl realizza interventi completi di bitumatura, parchi pubblici,
+          ponti, sgombero neve e ristrutturazioni. Da oltre 30 anni opera nel settore delle opere
+          pubbliche come unico referente per il tuo cantiere, dalla progettazione all’esecuzione.
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">Bitumatura</span>
+          <span class="hero-tag">Parchi urbani</span>
+          <span class="hero-tag">Ponti</span>
+          <span class="hero-tag">Emergenza neve</span>
+          <span class="hero-tag">Ristrutturazioni</span>
+        </div>
+        <div class="hero-actions">
+          <button class="btn btn-primary" onclick="scrollToSection('contatti')">Contattaci</button>
+          <button class="btn btn-outline" onclick="scrollToSection('realizzazioni')">Vedi le realizzazioni</button>
+        </div>
+        <div class="hero-secondary">Provincia di Taranto e aree limitrofe</div>
+      </div>
+
+      <div class="hero-frame">
+        <div class="hero-glow"></div>
+        <div class="hero-window">
+          <div class="hero-window-header">
+            <span>cantieri/strada-sp13</span>
+            <span class="hero-dots">
+              <span class="hero-dot red"></span>
+              <span class="hero-dot yellow"></span>
+              <span class="hero-dot green"></span>
+            </span>
+          </div>
+          <div class="hero-image"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AZIENDA -->
+  <section id="azienda">
+    <div class="container two-col">
+      <div>
+        <div class="muted-title">Azienda</div>
+        <h2>Costruzioni di Taranto srl</h2>
+        <p>
+          Siamo un’impresa specializzata in lavori stradali, realizzazione di parchi e aree verdi,
+          opere infrastrutturali e ristrutturazioni. Gestiamo commesse pubbliche e private con
+          personale qualificato e mezzi di proprietà.
+        </p>
+        <p>
+          Da oltre 30 anni operiamo nel settore delle opere pubbliche affrontando interventi
+          complessi e garantendo qualità, sicurezza e tempi certi di consegna.
+        </p>
+        <div class="key-points">
+          <div class="key-point">
+            <div class="key-bullet"></div>
+            <div>Squadre operative dedicate per strade, parchi, ristrutturazioni e emergenze neve.</div>
+          </div>
+          <div class="key-point">
+            <div class="key-bullet"></div>
+            <div>Parco mezzi completo: frese, vibrofinitrici, rulli, pale, camion e attrezzature.</div>
+          </div>
+          <div class="key-point">
+            <div class="key-bullet"></div>
+            <div>Rispetto delle normative tecniche e dei più elevati standard di sicurezza.</div>
+          </div>
+          <div class="key-point">
+            <div class="key-bullet"></div>
+            <div>Presidio costante del territorio con interventi programmati e d’urgenza.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-frame">
+        <div class="image-frame-inner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIZI (DINAMICO) -->
+  <section id="servizi">
+    <div class="container">
+      <div class="muted-title">Cosa facciamo</div>
+      <h2>Servizi principali</h2>
+      <p>
+        Clicca su un servizio per vedere il dettaglio. Puoi combinare bitumatura, parchi, ponti,
+        neve e ristrutturazioni in un unico appalto con un solo referente.
+      </p>
+
+      <div class="services-layout">
+        <div class="services-grid" id="servicesGrid">
+          <button class="service-card active" data-service="bitumatura">
+            <span class="tag">Strade e viabilità</span>
+            <strong>Bitumatura e asfaltature</strong>
+            <p>Realizzazione e rifacimento di pavimentazioni stradali, marciapiedi, piste ciclabili e parcheggi.</p>
+          </button>
+
+          <button class="service-card" data-service="parchi">
+            <span class="tag">Parchi e verde</span>
+            <strong>Parchi pubblici e aree verdi</strong>
+            <p>Progettazione e realizzazione di parchi urbani, aree gioco, percorsi pedonali e ciclabili.</p>
+          </button>
+
+          <button class="service-card" data-service="ponti">
+            <span class="tag">Infrastrutture</span>
+            <strong>Ponti e opere d’arte</strong>
+            <p>Manutenzione e adeguamento di ponti, sottopassi e opere strutturali con soluzioni tecniche avanzate.</p>
+          </button>
+
+          <button class="service-card" data-service="neve">
+            <span class="tag">Emergenze</span>
+            <strong>Sgombero neve e emergenze</strong>
+            <p>Mezzi dedicati per lo sgombero neve e il ripristino rapido della viabilità in caso di eventi atmosferici.</p>
+          </button>
+
+          <button class="service-card" data-service="ristrutturazioni">
+            <span class="tag">Edilizia</span>
+            <strong>Ristrutturazioni e recupero edilizio</strong>
+            <p>Interventi su edifici pubblici e privati, recupero di immobili storici e adeguamenti funzionali.</p>
+          </button>
+        </div>
+
+        <div class="service-detail" id="serviceDetail">
+          <div class="muted-title">Dettaglio servizio</div>
+          <h3 id="serviceDetailTitle">Bitumatura e asfaltature</h3>
+          <p id="serviceDetailText">
+            Realizzazione e rifacimento di pavimentazioni stradali, marciapiedi, piste ciclabili e
+            parcheggi. Gestiamo tutte le fasi: fresatura, sottofondi, binder e tappeto d’usura,
+            garantendo qualità del manto e corretta regimazione delle acque.
+          </p>
+          <ul>
+            <li>Sopralluogo tecnico in sito</li>
+            <li>Proposta d’intervento e cronoprogramma</li>
+            <li>Esecuzione lavori con direzione tecnica interna</li>
+            <li>Consegna e assistenza post-intervento</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REALIZZAZIONI (FILTRABILE) -->
+  <section id="realizzazioni">
+    <div class="container">
+      <div class="muted-title">Cantieri</div>
+      <h2>Alcune nostre realizzazioni</h2>
+      <p>
+        Filtra le immagini per tipologia di intervento: strade, parchi, neve o ristrutturazioni.
+        Le fotografie riportano alcuni dei cantieri seguiti negli anni.
+      </p>
+
+      <div class="filter-bar" id="projectsFilters">
+        <button class="filter-btn active" data-category="Tutti">Tutti</button>
+        <button class="filter-btn" data-category="Strade">Strade</button>
+        <button class="filter-btn" data-category="Parchi">Parchi</button>
+        <button class="filter-btn" data-category="Neve">Neve</button>
+        <button class="filter-btn" data-category="Ristrutturazioni">Ristrutturazioni</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- STRADE -->
+        <div class="project-card" data-category="Strade">
+          <div class="project-image" style="background-image: url('images/Strada_SP13.PNG');"></div>
+          <div class="project-info">
+            <div>
+              <div class="project-title">Nuova viabilità extraurbana</div>
+              <div class="project-category">Strade</div>
+            </div>
+            <div class="project-badge">Cantiere</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="Strade">
+          <div class="project-image" style="background-image: url('images/Lavori_Stradali.jpg');"></div>
+          <div class="project-info">
+            <div>
+              <div class="project-title">Cantieri stradali in corso</div>
+              <div class="project-category">Strade</div>
+            </div>
+            <div class="project-badge">Cantiere</div>
+          </div>
+        </div>
+
+        <!-- PARCHI -->
+        <div class="project-card" data-category="Parchi">
+          <div class="project-image" style="background-image: url('images/Parco_Laterza.PNG');"></div>
+          <div class="project-info">
+            <div>
+              <div class="project-title">Parco urbano Laterza</div>
+              <div class="project-category">Parchi</div>
+            </div>
+            <div class="project-badge">Cantiere</div>
+          </div>
+        </div>
+
+        <div class="project-card" data-category="Parchi">
+          <div class="project-image" style="background-image: url('images/Parchi_Statte.PNG');"></div>
+          <div class="project-info">
+            <div>
+              <div class="project-title">Percorsi pedonali e verde</div>
+              <div class="project-category">Parchi</div>
+            </div>
+            <div class="project-badge">Cantiere</div>
+          </div>
+        </div>
+
+        <!-- NEVE -->
+        <div class="project-card" data-category="Neve">
+          <div class="project-image" style="background-image: url('images/Interventi_Neve.PNG');"></div>
+          <div class="project-info">
+            <div>
+              <div class="project-title">Interventi in emergenza neve</div>
+              <div class="project-category">Neve</div>
+            </div>
+            <div class="project-badge">Cantiere</div>
+          </div>
+        </div>
+
+        <!-- RISTRUTTURAZIONI -->
+        <div class="project-card" data-category="Ristrutturazioni">
+          <div class="project-image" style="background-image: url('images/Ristrutturazione_palazzo_marchesale_Laterza.PNG');"></div>
+          <div class="project-info">
+            <div>
+              <div class="project-title">Recupero edificio storico</div>
+              <div class="project-category">Ristrutturazioni</div>
+            </div>
+            <div class="project-badge">Cantiere</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti">
+    <div class="container">
+      <div class="muted-title">Contatti</div>
+      <h2>Richiedi informazioni o un sopralluogo</h2>
+      <p>
+        Compila il modulo per essere ricontattato. Inserisci il tipo di intervento (bitumatura,
+        parco, ponte, neve, ristrutturazione) e l’area interessata.
+      </p>
+
+      <div class="contact-layout">
+        <div class="contact-card">
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Sede operativa</span>
+              <span class="contact-main">Via Virgilio 34, 74014 Laterza (TA)</span>
+            </li>
+            <li>
+              <span class="contact-label">Telefono</span>
+              <span class="contact-main">+39 099 821 3638</span>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <span class="contact-main">asflatostrade@libero.it</span>
+            </li>
+            <li>
+              <span class="contact-label">PEC</span>
+              <span class="contact-main">costruzioniditarantosrl@pec.it</span>
+            </li>
+          </ul>
+          <p class="contact-note">
+            Puoi indicare nel messaggio eventuali riferimenti a bandi, gare o capitolati. Siamo
+            disponibili per sopralluoghi tecnici e preventivi dettagliati.
+          </p>
+        </div>
+
+        <form class="contact-form" onsubmit="handleFormSubmit(event)">
+          <div>
+            <label for="nome">Nome e cognome</label>
+            <input id="nome" name="nome" type="text" placeholder="Il tuo nome" required>
+          </div>
+          <div>
+            <label for="ente">Ente / Azienda</label>
+            <input id="ente" name="ente" type="text" placeholder="Comune, Ente o azienda">
+          </div>
+          <div class="contact-form-row">
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="nome@dominio.it" required>
+            </div>
+            <div>
+              <label for="telefono">Telefono</label>
+              <input id="telefono" name="telefono" type="tel" placeholder="+39 ...">
+            </div>
+          </div>
+          <div>
+            <label for="tipo">Tipo di intervento</label>
+            <select id="tipo" name="tipo">
+              <option>Bitumatura / strade</option>
+              <option>Parchi / aree verdi</option>
+              <option>Ponti / opere strutturali</option>
+              <option>Sgombero neve</option>
+              <option>Ristrutturazioni</option>
+              <option>Altro</option>
+            </select>
+          </div>
+          <div>
+            <label for="messaggio">Messaggio</label>
+            <textarea id="messaggio" name="messaggio" placeholder="Descrivi il cantiere o l’area di intervento..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Invia richiesta</button>
+          <p class="contact-privacy">
+            Compilando il modulo autorizzi il trattamento dei dati secondo la normativa vigente.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span class="brand">COSTRUZIONI DI TARANTO srl</span> – P.IVA / CF: 02798280737 · Tutti i diritti riservati.
+  </div>
+</footer>
+
+<script>
+  // Scroll helper per header/logo
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Mobile menu
+  const navToggle = document.getElementById('navToggle');
+  const navList = document.getElementById('navList');
+  if (navToggle) {
+    navToggle.addEventListener('click', function () {
+      navList.classList.toggle('open');
+    });
+  }
+  if (navList) {
+    navList.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        navList.classList.remove('open');
+      });
+    });
+  }
+
+  // Servizi - pannello dinamico
+  const serviceDetails = {
+    bitumatura: {
+      title: "Bitumatura e asfaltature",
+      text: "Realizzazione e rifacimento di pavimentazioni stradali, marciapiedi, piste ciclabili e parcheggi. Gestiamo fresatura, preparazione dei sottofondi, binder e tappeto d’usura, garantendo durabilità e sicurezza della viabilità."
+    },
+    parchi: {
+      title: "Parchi pubblici e aree verdi",
+      text: "Progettazione e realizzazione di parchi urbani, aree gioco, percorsi pedonali e ciclabili, con attenzione a arredi, illuminazione e inserimento paesaggistico, per spazi pubblici funzionali e fruibili."
+    },
+    ponti: {
+      title: "Ponti e opere d’arte",
+      text: "Manutenzione, adeguamento e realizzazione di ponti, sottopassi e opere d’arte, con soluzioni tecniche performanti e materiali certificati, nel rispetto delle normative vigenti."
+    },
+    neve: {
+      title: "Sgombero neve e emergenze",
+      text: "Mezzi dedicati per lo sgombero neve, il carico e il trasporto, con interventi rapidi in caso di eventi atmosferici eccezionali e ripristino della viabilità in tempi brevi."
+    },
+    ristrutturazioni: {
+      title: "Ristrutturazioni e recupero edilizio",
+      text: "Interventi di ristrutturazione su edifici pubblici e privati, recupero di immobili storici e adeguamento funzionale di spazi interni ed esterni, con attenzione a finiture e impianti."
+    }
+  };
+
+  const servicesGrid = document.getElementById('servicesGrid');
+  const serviceDetailTitle = document.getElementById('serviceDetailTitle');
+  const serviceDetailText = document.getElementById('serviceDetailText');
+
+  if (servicesGrid) {
+    servicesGrid.querySelectorAll('.service-card').forEach(function (card) {
+      card.addEventListener('click', function () {
+        const key = card.getAttribute('data-service');
+        servicesGrid.querySelectorAll('.service-card').forEach(function (c) {
+          c.classList.remove('active');
+        });
+        card.classList.add('active');
+        if (key && serviceDetails[key]) {
+          serviceDetailTitle.textContent = serviceDetails[key].title;
+          serviceDetailText.textContent = serviceDetails[key].text;
+        }
+      });
+    });
+  }
+
+  // Filtri realizzazioni
+  const filterButtons = document.querySelectorAll('#projectsFilters .filter-btn');
+  const projectCards = document.querySelectorAll('#projectsGrid .project-card');
+
+  filterButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const category = btn.getAttribute('data-category');
+
+      filterButtons.forEach(function (b) {
+        b.classList.remove('active');
+      });
+      btn.classList.add('active');
+
+      projectCards.forEach(function (card) {
+        const cardCat = card.getAttribute('data-category');
+        if (!category || category === 'Tutti' || category === cardCat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+
+  // Form contatti - demo
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    alert("Questo è un esempio di anteprima.\nIn produzione collega il form al tuo sistema di invio email o gestionale (es. script PHP, servizio esterno o CRM).");
+    e.target.reset();
+  }
+</script>
+
+</body>
+</html>
