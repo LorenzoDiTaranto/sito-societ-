@@ -876,76 +876,13 @@
     </div>
   </section>
 
-  <!-- SERVIZI (DINAMICO) -->
-  <section id="servizi">
-    <div class="container">
-      <div class="muted-title">Cosa facciamo</div>
-      <h2>Servizi principali</h2>
-      <p>
-        Clicca su un servizio per vedere il dettaglio. Puoi combinare bitumatura, parchi, ponti,
-        neve e ristrutturazioni in un unico appalto con un solo referente.
-      </p>
-
-      <div class="services-layout">
-        <div class="services-grid" id="servicesGrid">
-          <button class="service-card active" data-service="bitumatura">
-            <span class="tag">Strade e viabilità</span>
-            <strong>Bitumatura e asfaltature</strong>
-            <p>Realizzazione e rifacimento di pavimentazioni stradali, marciapiedi, piste ciclabili e parcheggi.</p>
-          </button>
-
-          <button class="service-card" data-service="parchi">
-            <span class="tag">Parchi e verde</span>
-            <strong>Parchi pubblici e aree verdi</strong>
-            <p>Progettazione e realizzazione di parchi urbani, aree gioco, percorsi pedonali e ciclabili.</p>
-          </button>
-
-          <button class="service-card" data-service="ponti">
-            <span class="tag">Infrastrutture</span>
-            <strong>Ponti e opere d’arte</strong>
-            <p>Manutenzione e adeguamento di ponti, sottopassi e opere strutturali con soluzioni tecniche avanzate.</p>
-          </button>
-
-          <button class="service-card" data-service="neve">
-            <span class="tag">Emergenze</span>
-            <strong>Sgombero neve e emergenze</strong>
-            <p>Mezzi dedicati per lo sgombero neve e il ripristino rapido della viabilità in caso di eventi atmosferici.</p>
-          </button>
-
-          <button class="service-card" data-service="ristrutturazioni">
-            <span class="tag">Edilizia</span>
-            <strong>Ristrutturazioni e recupero edilizio</strong>
-            <p>Interventi su edifici pubblici e privati, recupero di immobili storici e adeguamenti funzionali.</p>
-          </button>
-        </div>
-
-        <div class="service-detail" id="serviceDetail">
-          <div class="muted-title">Dettaglio servizio</div>
-          <h3 id="serviceDetailTitle">Bitumatura e asfaltature</h3>
-          <p id="serviceDetailText">
-            Realizzazione e rifacimento di pavimentazioni stradali, marciapiedi, piste ciclabili e
-            parcheggi. Gestiamo tutte le fasi: fresatura, sottofondi, binder e tappeto d’usura,
-            garantendo qualità del manto e corretta regimazione delle acque.
-          </p>
-          <ul>
-            <li>Sopralluogo tecnico in sito</li>
-            <li>Proposta d’intervento e cronoprogramma</li>
-            <li>Esecuzione lavori con direzione tecnica interna</li>
-            <li>Consegna e assistenza post-intervento</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REALIZZAZIONI (FILTRABILE) -->
+  <!-- REALIZZAZIONI (FILTRABILE) - SPOSTATE PRIMA DEI SERVIZI -->
   <section id="realizzazioni">
     <div class="container">
       <div class="muted-title">Cantieri</div>
       <h2>Alcune nostre realizzazioni</h2>
       <p>
-        Filtra le immagini per tipologia di intervento: strade, parchi, neve o ristrutturazioni.
-        Le fotografie riportano alcuni dei cantieri seguiti negli anni.
+       Alcuni dei cantieri seguiti negli anni.
       </p>
 
       <div class="filter-bar" id="projectsFilters">
@@ -1025,6 +962,68 @@
             </div>
             <div class="project-badge">Cantiere</div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIZI (DINAMICO) -->
+  <section id="servizi">
+    <div class="container">
+      <div class="muted-title">Cosa facciamo</div>
+      <h2>Servizi principali</h2>
+      <p>
+        Bitumatura, parchi, ponti,
+        neve e ristrutturazioni in un unico appalto con un solo referente.
+      </p>
+
+      <div class="services-layout">
+        <div class="services-grid" id="servicesGrid">
+          <button class="service-card active" data-service="bitumatura">
+            <span class="tag">Strade e viabilità</span>
+            <strong>Bitumatura e asfaltature</strong>
+            <p>Realizzazione e rifacimento di pavimentazioni stradali, marciapiedi, piste ciclabili e parcheggi.</p>
+          </button>
+
+          <button class="service-card" data-service="parchi">
+            <span class="tag">Parchi e verde</span>
+            <strong>Parchi pubblici e aree verdi</strong>
+            <p>Progettazione e realizzazione di parchi urbani, aree gioco, percorsi pedonali e ciclabili.</p>
+          </button>
+
+          <button class="service-card" data-service="ponti">
+            <span class="tag">Infrastrutture</span>
+            <strong>Ponti e opere d’arte</strong>
+            <p>Manutenzione e adeguamento di ponti, sottopassi e opere strutturali con soluzioni tecniche avanzate.</p>
+          </button>
+
+          <button class="service-card" data-service="neve">
+            <span class="tag">Emergenze</span>
+            <strong>Sgombero neve e emergenze</strong>
+            <p>Mezzi dedicati per lo sgombero neve e il ripristino rapido della viabilità in caso di eventi atmosferici.</p>
+          </button>
+
+          <button class="service-card" data-service="ristrutturazioni">
+            <span class="tag">Edilizia</span>
+            <strong>Ristrutturazioni e recupero edilizio</strong>
+            <p>Interventi su edifici pubblici e privati, recupero di immobili storici e adeguamenti funzionali.</p>
+          </button>
+        </div>
+
+        <div class="service-detail" id="serviceDetail">
+          <div class="muted-title">Dettaglio servizio</div>
+          <h3 id="serviceDetailTitle">Bitumatura e asfaltature</h3>
+          <p id="serviceDetailText">
+            Realizzazione e rifacimento di pavimentazioni stradali, marciapiedi, piste ciclabili e
+            parcheggi. Gestiamo tutte le fasi: fresatura, sottofondi, binder e tappeto d’usura,
+            garantendo qualità del manto e corretta regimazione delle acque.
+          </p>
+          <ul>
+            <li>Sopralluogo tecnico in sito</li>
+            <li>Proposta d’intervento e cronoprogramma</li>
+            <li>Esecuzione lavori con direzione tecnica interna</li>
+            <li>Consegna e assistenza post-intervento</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -1218,4 +1217,3 @@
 
 </body>
 </html>
-
