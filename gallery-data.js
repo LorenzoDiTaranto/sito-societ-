@@ -1,0 +1,169 @@
+window.__galleryData = {
+    "generatedAt":  "2026-03-20T15:25:35",
+    "items":  [
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/Parchi_Statte.PNG"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/Parco_Laterza.PNG"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/Ristrutturazione_palazzo_marchesale_Laterza.PNG"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/Sede_operativa.PNG"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/WhatsApp Image 2026-01-24 at 19.11.47 (2).jpeg"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/WhatsApp Image 2026-01-24 at 19.11.47.jpeg"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/WhatsApp Image 2026-01-24 at 19.11.59 (2).jpeg"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/WhatsApp Image 2026-01-24 at 19.11.59 (3).jpeg"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/WhatsApp Image 2026-01-24 at 19.11.59 (4).jpeg"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/WhatsApp Image 2026-01-24 at 19.11.59.jpeg"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/WhatsApp Image 2026-01-24 at 19.12.02 (2).jpeg"
+                  },
+                  {
+                      "category":  "Parchi",
+                      "image":  "Immagini/Parchi/WhatsApp Image 2026-01-24 at 19.12.02 (3).jpeg"
+                  },
+                  {
+                      "category":  "Restauri",
+                      "image":  "Immagini/Restauri/1_Palazzo_Marchesale.jpeg"
+                  },
+                  {
+                      "category":  "Restauri",
+                      "image":  "Immagini/Restauri/2_Palazzo_Marchesale.jpeg"
+                  },
+                  {
+                      "category":  "Restauri",
+                      "image":  "Immagini/Restauri/3_Palazzo_Marchesale.jpeg"
+                  },
+                  {
+                      "category":  "Restauri",
+                      "image":  "Immagini/Restauri/WhatsApp Image 2026-01-24 at 19.12.01 (1).jpeg"
+                  },
+                  {
+                      "category":  "Restauri",
+                      "image":  "Immagini/Restauri/WhatsApp Image 2026-01-24 at 19.12.01 (2).jpeg"
+                  },
+                  {
+                      "category":  "Restauri",
+                      "image":  "Immagini/Restauri/WhatsApp Image 2026-01-24 at 19.12.01 (3).jpeg"
+                  },
+                  {
+                      "category":  "Restauri",
+                      "image":  "Immagini/Restauri/WhatsApp Image 2026-01-24 at 19.12.01 (4).jpeg"
+                  },
+                  {
+                      "category":  "Restauri",
+                      "image":  "Immagini/Restauri/WhatsApp Image 2026-01-24 at 19.12.01.jpeg"
+                  },
+                  {
+                      "category":  "Servizio Neve",
+                      "image":  "Immagini/Servizio_Neve/Interventi_Neve.PNG"
+                  },
+                  {
+                      "category":  "Servizio Neve",
+                      "image":  "Immagini/Servizio_Neve/WhatsApp Image 2026-01-24 at 19.11.59 (1).jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/Lavori_Stradali (2).PNG"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/Lavori_Stradali (3).PNG"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/Lavori_Stradali.jpg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/Strada_SP13.PNG"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.11.48.jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.12.00 (1).jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.12.00.jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.12.02 (1).jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.12.02 (4).jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.12.03 (2).jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.12.03 (3).jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.12.03 (4).jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.12.03 (5).jpeg"
+                  },
+                  {
+                      "category":  "Strade",
+                      "image":  "Immagini/Strade/WhatsApp Image 2026-01-24 at 19.12.03.jpeg"
+                  },
+                  {
+                      "category":  "Taglio Erba",
+                      "image":  "Immagini/Taglio_erba/WhatsApp Image 2026-01-24 at 19.11.47 (1).jpeg"
+                  },
+                  {
+                      "category":  "Taglio Erba",
+                      "image":  "Immagini/Taglio_erba/WhatsApp Image 2026-01-24 at 19.11.58.jpeg"
+                  },
+                  {
+                      "category":  "Taglio Erba",
+                      "image":  "Immagini/Taglio_erba/WhatsApp Image 2026-01-24 at 19.12.00 (2).jpeg"
+                  },
+                  {
+                      "category":  "Taglio Erba",
+                      "image":  "Immagini/Taglio_erba/WhatsApp Image 2026-01-24 at 19.12.02.jpeg"
+                  },
+                  {
+                      "category":  "Taglio Erba",
+                      "image":  "Immagini/Taglio_erba/WhatsApp Image 2026-01-24 at 19.12.03 (1).jpeg"
+                  }
+              ]
+};
