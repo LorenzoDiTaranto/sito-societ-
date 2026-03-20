@@ -1,5 +1,5 @@
 window.__galleryData = {
-  "generatedAt": "2026-03-20T16:10:21",
+  "generatedAt": "2026-03-20T16:12:05",
   "items": [
     {
       "category": "Parchi",
