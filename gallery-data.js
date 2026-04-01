@@ -1,5 +1,5 @@
 window.__galleryData = {
-  "generatedAt": "2026-04-01T13:16:51",
+  "generatedAt": "2026-04-01T13:32:17",
   "items": [
     {
       "category": "Parchi",
@@ -103,7 +103,7 @@ window.__galleryData = {
     },
     {
       "category": "Strade",
-      "image": "Immagini/Strade/Strada_SP13.PNG"
+      "image": "Immagini/Strade/Strada_SP13.png"
     },
     {
       "category": "Strade",
